@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> شركه لمويني لتسويق العقاري</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav-row">
+    <div class="brand">
+      <div class="brand-seal"><span>م</span></div>
+      <div>
+        <div class="brand-name">لمويني</div>
+        <div class="brand-tag">تسويق العقارات</div>
+      </div>
+    </div>
+    <nav class="links">
+      <a href="#listings" data-cat="شقق">شقق</a>
+      <a href="#listings" data-cat="أراضي">أراضي</a>
+      <a href="#listings" data-cat="مخازن">مخازن</a>
+      <a href="#listings" data-cat="مقابر">مقابر</a>
+      <a href="#trust" data-plain="1">ليه لمويني؟</a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:12px;">
+      <span class="admin-badge" id="admin-badge"><span class="dot2"></span>وضع الأدمن<button class="admin-logout" id="admin-logout">خروج</button></span>
+      <button class="admin-btn" id="open-add-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="11" width="14" height="9" rx="1.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+        <span id="add-btn-label">دخول الأدمن</span>
+      </button>
+      <button class="burger" id="burger-btn"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#listings" data-cat="شقق">شقق</a>
+    <a href="#listings" data-cat="أراضي">أراضي</a>
+    <a href="#listings" data-cat="مخازن">مخازن</a>
+    <a href="#listings" data-cat="مقابر">مقابر</a>
+    <a href="#trust" data-plain="1">ليه لمويني؟</a>
+    <button id="mobile-add-btn"><span id="mobile-add-label">دخول الأدمن</span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">كل عقار عليه توثيق ورقم قيد</span>
+        <h1 class="hero-title">اشترِ وبيع بثقة، <em>وكأنك بتقرأ العقد</em> قبل ما تشوف العقار</h1>
+        <p class="hero-sub">شقق، أراضي، مخازن، ومقابر أسرية — كل إعلان بيوصلك ببياناته الرسمية: المساحة، الحيازة، وحالة التسجيل، من غير مفاجآت بعد المعاينة.</p>
+        <div class="hero-stats">
+          <div><div class="stat-num plex">100+</div><div class="stat-label">عقار متاح دلوقتي</div></div>
+          <div><div class="stat-num plex">100</div><div class="stat-label">عقار موثّق بالكامل</div></div>
+          <div><div class="stat-num plex">الاسكندريه</div><div class="stat-label">محافظة مغطّاة</div></div>
+        </div>
+      </div>
+      <div class="hero-doc hero-contact">
+        <div class="contact-row">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#1C2B45" stroke-width="1.7"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.7a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.5 2.7.6a2 2 0 0 1 1.7 2z"/></svg></div>
+          <div><div class="contact-label">اتصل بينا</div><div class="contact-value plex">01225129604</div></div>
+        </div>
+        <a href="https://wa.me/201225129604" class="whatsapp-row">
+          <svg viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5C10.9 9 10.3 7.6 10 7c-.1-.4-.3-.3-.5-.3h-.5c-.2 0-.5.1-.7.3-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.6.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4z"/><path d="M12 2a10 10 0 0 0-8.5 15.2L2 22l4.9-1.5A10 10 0 1 0 12 2z" fill="none" stroke="#fff" stroke-width="1.2"/></svg>
+          <span>كلّمنا واتساب</span>
+        </a>
+        <div class="social-divider">تابعنا</div>
+        <div class="social-row">
+          <a href="https://www.facebook.com/share/1BmMwophwC/" class="social-btn" aria-label="فيسبوك"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v7h3v-7h3l1-3h-4v-1.5c0-.3.2-.5.5-.5z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-panel">
+      <div class="field">
+        <label>نوع العقار</label>
+        <select id="search-type">
+          <option value="all">كل الأنواع</option>
+          <option value="شقق">شقق</option>
+          <option value="أراضي">أراضي</option>
+          <option value="مخازن">مخازن</option>
+          <option value="مقابر">مقابر</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>المحافظة</label>
+        <select id="search-gov">
+          <option value="all">كل المحافظات</option>
+          <option value="الإسكندرية">الإسكندرية</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>السعر الأقصى</label>
+        <input type="text" id="search-price" placeholder="مثال: 2000000">
+      </div>
+      <button class="search-btn" id="search-btn">دوّر دلوقتي</button>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="categories">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-eyebrow">أربعة أقسام،مكان واحد</div>
+        <h2 class="sec-title">اختار نوع عقارك</h2>
+      </div>
+    </div>
+    <div class="cat-grid">
+
+      <div class="cat-card" data-cat="شقق">
+        <div class="bar" style="background:var(--ink);"></div>
+        <div class="cat-icon" style="background:#E7EBF3;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1C2B45" stroke-width="1.6"><path d="M4 21V7l8-4 8 4v14"/><path d="M9 21v-6h6v6"/><path d="M9 11h.01M15 11h.01M9 15h.01M15 15h.01"/></svg>
+        </div>
+        <div class="cat-name">شقق</div>
+        <div class="cat-count plex">7,412 إعلان متاح</div>
+      </div>
+
+      <div class="cat-card" data-cat="أراضي">
+        <div class="bar" style="background:var(--forest);"></div>
+        <div class="cat-icon" style="background:#E6EEE9;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#3F5D4E" stroke-width="1.6"><path d="M3 21h18"/><path d="M4 21V10l4-3 4 3 4-3 4 3v11"/><path d="M12 21v-6"/></svg>
+        </div>
+        <div class="cat-name">أراضي</div>
+        <div class="cat-count plex">4,158 إعلان متاح</div>
+      </div>
+
+      <div class="cat-card" data-cat="مخازن">
+        <div class="bar" style="background:var(--brass);"></div>
+        <div class="cat-icon" style="background:#F4EAD8;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#93692B" stroke-width="1.6"><path d="M3 9l9-6 9 6v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9z"/><path d="M3 9l9 4 9-4"/><path d="M12 13v8"/></svg>
+        </div>
+        <div class="cat-name">مخازن</div>
+        <div class="cat-count plex">2,306 إعلان متاح</div>
+      </div>
+
+      <div class="cat-card" data-cat="مقابر">
+        <div class="bar" style="background:var(--maroon);"></div>
+        <div class="cat-icon" style="background:#EFE2E2;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#7A3B3B" stroke-width="1.6"><path d="M12 3c2 2.5 3 5 3 7a3 3 0 0 1-6 0c0-2 1-4.5 3-7z"/><path d="M6 21v-6a6 6 0 0 1 12 0v6"/><path d="M3 21h18"/></svg>
+        </div>
+        <div class="cat-name">مقابر</div>
+        <div class="cat-count plex">964 إعلان متاح</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="listings" style="padding-top:0;">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="sec-eyebrow">أحدث القيود</div>
+        <h2 class="sec-title">عقارات مضافة حديثًا</h2>
+      </div>
+      <a class="see-all" href="#listings" id="see-all-link">عرض الكل ←</a>
+    </div>
+
+    <div class="listing-tabs">
+      <div class="tab active" data-cat="all">الكل</div>
+      <div class="tab" data-cat="شقق">شقق</div>
+      <div class="tab" data-cat="أراضي">أراضي</div>
+      <div class="tab" data-cat="مخازن">مخازن</div>
+      <div class="tab" data-cat="مقابر">مقابر</div>
+    </div>
+
+    <div class="listings-grid" id="listings-grid">
+
+      <div class="card" data-id="static-1" data-cat="شقق" data-gov="القاهرة" data-price="2650000">
+        <div class="card-media" style="background:linear-gradient(135deg,#1C2B45,#33456A);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E9E1CE" stroke-width="1.3"><path d="M4 21V7l8-4 8 4v14"/><path d="M9 21v-6h6v6"/></svg>
+          <div class="verified" data-doc="عقد بيع مسجّل رقم 4471/2026 — الشهر العقاري، مدينة نصر"><span>موثّق</span></div>
+          <div class="card-price-tag plex">2,650,000 ج.م</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">شقة 3 غرف بمدخل مستقل</div>
+          <div class="card-loc">📍 التجمع الخامس، القاهرة</div>
+          <div class="card-meta plex"><span>145 م²</span><span>الدور 4</span><span>تشطيب سوبر لوكس</span></div>
+        </div>
+      </div>
+
+      <div class="card" data-id="static-2" data-cat="أراضي" data-gov="الجيزة" data-price="1200000">
+        <div class="card-media" style="background:linear-gradient(135deg,#3F5D4E,#5C8271);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E9E1CE" stroke-width="1.3"><path d="M3 21h18"/><path d="M4 21V10l4-3 4 3 4-3 4 3v11"/></svg>
+          <div class="verified" data-doc="عقد أرض مسجّل رقم 2093/2025 — الشهر العقاري، السادس من أكتوبر"><span>موثّق</span></div>
+          <div class="card-price-tag plex">1,200,000 ج.م</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">قطعة أرض سكنية على شارعين</div>
+          <div class="card-loc">📍 السادس من أكتوبر، الجيزة</div>
+          <div class="card-meta plex"><span>400 م²</span><span>عقد مسجّل</span><span>مرافق كاملة</span></div>
+        </div>
+      </div>
+
+      <div class="card" data-id="static-3" data-cat="مخازن" data-gov="أخرى" data-price="18000">
+        <div class="card-media" style="background:linear-gradient(135deg,#93692B,#B8863B);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#F4EAD8" stroke-width="1.3"><path d="M3 9l9-6 9 6v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9z"/><path d="M3 9l9 4 9-4"/></svg>
+          <div class="verified" data-doc="رخصة نشاط تجاري رقم 887 — العاشر من رمضان"><span>موثّق</span></div>
+          <div class="card-price-tag plex">18,000 ج.م / شهر</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">مخزن صناعي بارتفاع كبير</div>
+          <div class="card-loc">📍 المنطقة الصناعية، العاشر من رمضان</div>
+          <div class="card-meta plex"><span>800 م²</span><span>باب هيدروليكي</span><span>رخصة نشاط</span></div>
+        </div>
+      </div>
+
+      <div class="card" data-id="static-4" data-cat="شقق" data-gov="الجيزة" data-price="3900000">
+        <div class="card-media" style="background:linear-gradient(135deg,#1C2B45,#33456A);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E9E1CE" stroke-width="1.3"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-8h6v8"/></svg>
+          <div class="verified" data-doc="عقد بيع مسجّل رقم 5502/2026 — الشهر العقاري، الشيخ زايد"><span>موثّق</span></div>
+          <div class="card-price-tag plex">3,900,000 ج.م</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">دوبلكس بحديقة خاصة</div>
+          <div class="card-loc">📍 الشيخ زايد، الجيزة</div>
+          <div class="card-meta plex"><span>220 م²</span><span>حديقة 60 م²</span><span>تشطيب كامل</span></div>
+        </div>
+      </div>
+
+      <div class="card" data-id="static-5" data-cat="أراضي" data-gov="أخرى" data-price="850000">
+        <div class="card-media" style="background:linear-gradient(135deg,#3F5D4E,#5C8271);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#E9E1CE" stroke-width="1.3"><path d="M3 21h18"/><path d="M4 21V10l4-3 4 3 4-3 4 3v11"/></svg>
+          <div class="verified" data-doc="حيازة زراعية موثّقة رقم 118 — طريق مصر إسماعيلية"><span>موثّق</span></div>
+          <div class="card-price-tag plex">850,000 ج.م</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">أرض زراعية قابلة للتغيير</div>
+          <div class="card-loc">📍 طريق مصر إسماعيلية</div>
+          <div class="card-meta plex"><span>1 فدان</span><span>حيازة موثّقة</span><span>ري متاح</span></div>
+        </div>
+      </div>
+
+      <div class="card" data-id="static-6" data-cat="مقابر" data-gov="القاهرة" data-price="220000">
+        <div class="card-media" style="background:linear-gradient(135deg,#5C3232,#7A3B3B);">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#EFE2E2" stroke-width="1.3"><path d="M12 3c2 2.5 3 5 3 7a3 3 0 0 1-6 0c0-2 1-4.5 3-7z"/><path d="M6 21v-6a6 6 0 0 1 12 0v6"/></svg>
+          <div class="verified" data-doc="سند تمليك رقم 355 — جبانة الوفاء، القاهرة"><span>موثّق</span></div>
+          <div class="card-price-tag plex">220,000 ج.م</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">مقبرة أسرية 4 حجرات</div>
+          <div class="card-loc">📍 جبانة الوفاء، القاهرة</div>
+          <div class="card-meta plex"><span>30 م²</span><span>سند تمليك</span><span>صيانة سنوية</span></div>
+        </div>
+      </div>
+
+    </div>
+    <p id="no-results" class="plex" style="display:none; text-align:center; color:var(--ink-soft); padding:40px 0;">مفيش عقارات مطابقة للفلتر ده دلوقتي. جرّب تغيّر الفلتر أو دوس "الكل".</p>
+  </div>
+</section>
+
+<section class="trust" id="trust">
+  <div class="wrap">
+    <div class="sec-eyebrow">ليه تستخدم لمويني</div>
+    <h2 class="sec-title">توثيق حقيقي، مش مجرد إعلان</h2>
+    <div class="trust-grid">
+      <div class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="#B8863B" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+        <h3>مراجعة مستندات</h3>
+        <p>فريقنا بيراجع سند الملكية أو عقد الحيازة قبل نشر أي إعلان.</p>
+      </div>
+      <div class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="#B8863B" stroke-width="1.5"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+        <h3>معاينة ميدانية</h3>
+        <p>معاين معتمد بيزور العقار ويأكّد المساحة والحالة الفعلية.</p>
+      </div>
+      <div class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="#B8863B" stroke-width="1.5"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg>
+        <h3>عمولة واضحة</h3>
+        <p>نسبة ثابتة معلنة من البداية، من غير رسوم مخفية على البيع أو الإيجار.</p>
+      </div>
+      <div class="trust-item">
+        <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="#B8863B" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M9 9h6v6H9z"/></svg>
+        <h3>دعم بعد التعاقد</h3>
+        <p>متابعة إجراءات التسجيل والتوكيلات لحد ما العقد يتقفل رسميًا.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="banner">
+      <div>
+        <h2>عندك عقار وعايز تعرضه بثقة؟</h2>
+        <p>ابعتلنا بياناته وفريق لمويني هيراجعه ويوثّقه وينشره لحسابك — النشر المباشر متاح لفريقنا فقط عشان نضمن دقة كل إعلان.</p>
+      </div>
+      <button class="cta-btn" id="banner-contact-btn"><a href="https://wa.me/+20123456789" target="_blank">تواصل معانا</a></button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <div class="brand-seal" style="border-color:#B8863B;"><span style="color:#B8863B;">م</span></div>
+          <div class="brand-name">لمويني</div>
+        </div>
+        <p class="foot-desc">سوق عقاري مصري بيغطي الشقق والأراضي والمخازن والمقابر الأسرية، بتوثيق مستندات حقيقي على كل إعلان.</p>
+      </div>
+      <div class="foot-col">
+        <h4>الأقسام</h4>
+        <a href="#listings" data-cat="شقق">شقق</a>
+        <a href="#listings" data-cat="أراضي">أراضي</a>
+        <a href="#listings" data-cat="مخازن">مخازن</a>
+        <a href="#listings" data-cat="مقابر">مقابر</a>
+      </div>
+      <div class="foot-col">
+        <h4>الشركة</h4>
+        <a href="#about" data-soon="1">عن لمويني</a>
+        <a href="#contact" data-soon="1">تواصل معانا</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 لمويني. جميع الحقوق محفوظة.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Admin login modal -->
+<div class="modal-overlay" id="login-modal">
+  <div class="modal-box">
+    <button class="modal-close" data-close-modal>✕</button>
+    <div class="modal-eyebrow">صلاحية محدودة</div>
+    <h2 class="modal-title">دخول الأدمن</h2>
+    <div class="lock-note">🔒 إضافة العقارات ونشرها متاحة لفريق لمويني بس، عشان كل إعلان يتراجع ويتوثّق قبل ما يظهر.</div>
+    <form id="login-form">
+      <div class="form-row">
+        <label>اسم المستخدم</label>
+        <input type="text" id="l-user" placeholder="admin" required>
+      </div>
+      <div class="form-row">
+        <label>كلمة المرور</label>
+        <input type="password" id="l-pass" placeholder="••••••••" required>
+      </div>
+      <p id="login-error" style="display:none; color:var(--maroon); font-size:13px; margin-bottom:10px;">بيانات الدخول غلط. جرّب تاني.</p>
+      <button type="submit" class="form-submit">دخول</button>
+    </form>
+  </div>
+</div>
+
+<!-- Add property modal -->
+<div class="modal-overlay" id="add-modal">
+  <div class="modal-box">
+    <button class="modal-close" data-close-modal>✕</button>
+    <div class="modal-eyebrow">تسجيل عقار جديد — وضع الأدمن</div>
+    <h2 class="modal-title">أضف عقارك للسجل</h2>
+    <form id="add-form">
+      <div class="form-row">
+        <label>عنوان الإعلان</label>
+        <input type="text" id="f-title" placeholder="مثال: شقة 3 غرف في المعادي" required>
+      </div>
+      <div class="form-grid-2">
+        <div class="form-row">
+          <label>نوع العقار</label>
+          <select id="f-type">
+            <option value="شقق">شقق</option>
+            <option value="أراضي">أراضي</option>
+            <option value="مخازن">مخازن</option>
+            <option value="مقابر">مقابر</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>المحافظة</label>
+          <select id="f-gov">
+            <option value="الإسكندرية">الإسكندرية</option>
+            <option value="أخرى">محافظة أخرى</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-grid-2">
+        <div class="form-row">
+          <label>المساحة (م²)</label>
+          <input type="text" id="f-area" placeholder="مثال: 150">
+        </div>
+        <div class="form-row">
+          <label>السعر (ج.م)</label>
+          <input type="text" id="f-price" placeholder="مثال: 1500000" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <label>صور العقار</label>
+        <label class="file-drop" id="file-drop-label">
+          📷 دوس أو اسحب الصور هنا (JPG / PNG)
+          <input type="file" id="f-images" accept="image/*" multiple>
+        </label>
+        <div class="img-preview-row" id="img-preview-row"></div>
+      </div>
+      <div class="form-row">
+        <label>تفاصيل مختصرة</label>
+        <textarea id="f-desc" placeholder="أي تفاصيل تساعد المهتمين..."></textarea>
+      </div>
+      <button type="submit" class="form-submit" id="add-submit-btn">انشر العقار في لمويني</button>
+    </form>
+  </div>
+</div>
+
+<!-- Verification detail modal -->
+<div class="modal-overlay" id="verify-modal">
+  <div class="modal-box">
+    <button class="modal-close" data-close-modal>✕</button>
+    <div class="modal-eyebrow">ختم التوثيق</div>
+    <h2 class="modal-title">تفاصيل المراجعة</h2>
+    <div class="verify-row"><span>حالة المستندات</span><b style="color:var(--forest);">مطابقة ✓</b></div>
+    <div class="verify-row"><span>رقم القيد</span><b id="verify-doc-num">—</b></div>
+    <div class="verify-row"><span>تمت المراجعة بواسطة</span><b>فريق توثيق لمويني</b></div>
+  </div>
+</div>
+
+<!-- Delete confirmation modal -->
+<div class="modal-overlay" id="delete-modal">
+  <div class="modal-box">
+    <button class="modal-close" data-close-modal>✕</button>
+    <div class="modal-eyebrow">وضع الأدمن</div>
+    <h2 class="modal-title">حذف العقار؟</h2>
+    <p class="delete-msg">هتحذف <b id="delete-target-title">هذا العقار</b> نهائيًا من لمويني. الإجراء ده مش قابل للتراجع.</p>
+    <div class="confirm-row">
+      <button class="btn-cancel" data-close-modal>تراجع</button>
+      <button class="btn-danger" id="confirm-delete-btn">احذف نهائيًا</button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"><span class="dot"></span><span id="toast-msg"></span></div>
+
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+<script src="firebase-config.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
